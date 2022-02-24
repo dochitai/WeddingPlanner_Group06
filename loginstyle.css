@@ -1,0 +1,221 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: url(./image/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.logo
+{
+	caret-color: transparent;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+	caret-color: transparent;
+}
+nav ul li a:hover
+{
+    color: rgb(102, 9, 9);
+}
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	border-radius: 30px;
+	background: rgba(0,0,0,0.4);
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+	caret-color: transparent;
+	color: #ffffff;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: rgb(102, 9, 9);
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 90px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #ffffff;
+	outline:none;
+	background: transparent;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+	caret-color: transparent;
+}
+p
+{
+	color:#ffffff;
+	font-size:13px;
+	bottom:68px;
+	position:absolute;
+	margin-left: 20px;
+	margin-bottom: 16px;
+	caret-color: transparent;
+}
+.forgotpw a
+{
+	margin-left: 85px;
+	color: #ffffff;
+}
+.forgotpw a:hover
+{
+	color: #ffffff;
+}
+.gender-details .gender-title
+{
+	color: #ffffff;
+	caret-color: transparent;
+}
+.gender-details .category
+{
+	display: flex;
+	width: 80%;
+	margin: 14px 0;
+	justify-content: space-between;
+}
+.gender-details .category label
+{
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	caret-color: transparent;
+}
+.gender-details .category .dot
+{
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	margin-right: 10px;
+	background: #ffffff;
+	border: 5px solid transparent;
+	transition: all 0.3s ease;
+	caret-color: transparent;
+}
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three
+{
+	background: rgb(102, 9, 9);
+}
+input[type="radio"]
+{
+	display: none;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: rgb(102, 9, 9);
+	color: #ffffff;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	caret-color: transparent;
+}

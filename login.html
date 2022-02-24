@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://kit.fontawesome.com/e00859bed5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='Gallery.html'>Gallery</a></li>
+                    <li><a href='About.html'>About</a></li>
+                    <li><a href='Contact.html'>Contact</a></li>
+                    <li><a href='#'>Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+                    <input type='password'class='input-field'placeholder='Password' required>
+                    <input type='checkbox'class='check-box'><p>Remember Password</p>
+                    <button type='submit'class='submit-btn'>Log in</button>
+                    <div class="forgotpw">
+                        <a href='#'>Forgot Password?</a>
+                    </div>
+                </form>
+		        <form action="" method="post" id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' id="firstName">
+                    <input type='text' class='input-field' placeholder='Last Name ' id="lastName">
+                    <input type='text' class='input-field' placeholder='Email Id' id="email">
+                    <input type='text' class='input-field' placeholder='Phone' id="phone">
+                    <input type='password' class='input-field' placeholder='Enter Password' id="pass">
+                    <input type='password' class='input-field' placeholder='Confirm Password'  id="repass">
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1" checked>
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title">Gender:</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Trans</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type='submit' class='submit-btn' onclick="return send()">Register</button>
+	            </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	</body>
+</html>
